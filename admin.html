@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="黎明杯初赛管理">
+  <title>黎明杯初赛管理</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <meta name="Li Ming Cup" content="Competition Schedule" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <div class="brand__mark"></div>
+        <div>
+          <h1>黎明杯初赛管理</h1>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <a href="schedule.html" class="">初赛赛程</a>
+        <a href="standing.html" class="">积分榜</a>
+        <a href="admin.html" aria-current="page>管理</a>
+      </nav>
+    </div>
+  </header>
+  <main class=" container" id="admin-page">
+
+          <section class="panel" id="admin-shell" data-admin-shell>
+            <div class="panel__header">
+              <div>
+                <h2>管理比分</h2>
+                <p class="muted">在线编辑后可下载新的 matches.json，再提交到仓库。</p>
+              </div>
+              <div class="badge">当前条目：<span data-count>0</span></div>
+            </div>
+
+            <div class="toolbar">
+              <div style="flex:1 1 220px">
+                <input type="text" placeholder="搜索队伍 / 赛区 / 轮次" data-search>
+              </div>
+              <div style="flex:1 1 180px">
+                <select data-region-filter>
+                  <option value="ALL">全部赛区</option>
+                  <option value="A">A 赛区</option>
+                  <option value="B">B 赛区</option>
+                  <option value="C">C 赛区</option>
+                  <option value="D">D 赛区</option>
+                </select>
+              </div>
+              <button class="btn" data-save>保存并下载 JSON</button>
+              <button class="btn secondary" data-reset>恢复原始数据</button>
+              <button class="btn secondary" data-clear-override>清除本地覆盖</button>
+            </div>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>赛区</th>
+                    <th>轮次</th>
+                    <th>日期</th>
+                    <th>时间</th>
+                    <th>主队</th>
+                    <th>客队</th>
+                    <th>主分</th>
+                    <th>客分</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody data-admin-root></tbody>
+              </table>
+            </div>
+          </section>
+
+          <div class="toast" data-toast></div>
+          <script type="module" src="assets/js/admin.js"></script>
+
+          <section class="panel">
+            <div class="panel__header">
+              <div>
+                <h2>使用方式</h2>
+                <p class="muted">直接编辑 data/matches.json 里的比分，刷新页面即可看到最新排名。</p>
+              </div>
+            </div>
+            <div class="grid-3">
+              <div class="card stat">
+                <strong>1. 录入比分</strong>
+                <span class="stat__label">可用管理页修改，也可直接改 JSON。</span>
+              </div>
+              <div class="card stat">
+                <strong>2. 提交到仓库</strong>
+                <span class="stat__label">GitHub Pages 自动发布静态文件。</span>
+              </div>
+              <div class="card stat">
+                <strong>3. 自动刷新页面</strong>
+                <span class="stat__label">前端会实时计算积分榜。</span>
+              </div>
+            </div>
+          </section>
+          </main>
+
+          <footer class="footer">
+            <div class="container">SSTIA Li Ming Cup 2026</div>
+          </footer>
+</body>
+
+</html>

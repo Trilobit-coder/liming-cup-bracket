@@ -1,0 +1,260 @@
+[
+  {
+    "id": "A01",
+    "name": "A组01",
+    "region": "A",
+    "seed": 1
+  },
+  {
+    "id": "A02",
+    "name": "A组02",
+    "region": "A",
+    "seed": 2
+  },
+  {
+    "id": "A03",
+    "name": "A组03",
+    "region": "A",
+    "seed": 3
+  },
+  {
+    "id": "A04",
+    "name": "A组04",
+    "region": "A",
+    "seed": 4
+  },
+  {
+    "id": "A05",
+    "name": "A组05",
+    "region": "A",
+    "seed": 5
+  },
+  {
+    "id": "A06",
+    "name": "A组06",
+    "region": "A",
+    "seed": 6
+  },
+  {
+    "id": "A07",
+    "name": "A组07",
+    "region": "A",
+    "seed": 7
+  },
+  {
+    "id": "A08",
+    "name": "A组08",
+    "region": "A",
+    "seed": 8
+  },
+  {
+    "id": "A09",
+    "name": "A组09",
+    "region": "A",
+    "seed": 9
+  },
+  {
+    "id": "A10",
+    "name": "A组10",
+    "region": "A",
+    "seed": 10
+  },
+  {
+    "id": "A11",
+    "name": "A组11",
+    "region": "A",
+    "seed": 11
+  },
+  {
+    "id": "B01",
+    "name": "B组01",
+    "region": "B",
+    "seed": 1
+  },
+  {
+    "id": "B02",
+    "name": "B组02",
+    "region": "B",
+    "seed": 2
+  },
+  {
+    "id": "B03",
+    "name": "B组03",
+    "region": "B",
+    "seed": 3
+  },
+  {
+    "id": "B04",
+    "name": "B组04",
+    "region": "B",
+    "seed": 4
+  },
+  {
+    "id": "B05",
+    "name": "B组05",
+    "region": "B",
+    "seed": 5
+  },
+  {
+    "id": "B06",
+    "name": "B组06",
+    "region": "B",
+    "seed": 6
+  },
+  {
+    "id": "B07",
+    "name": "B组07",
+    "region": "B",
+    "seed": 7
+  },
+  {
+    "id": "B08",
+    "name": "B组08",
+    "region": "B",
+    "seed": 8
+  },
+  {
+    "id": "B09",
+    "name": "B组09",
+    "region": "B",
+    "seed": 9
+  },
+  {
+    "id": "B10",
+    "name": "B组10",
+    "region": "B",
+    "seed": 10
+  },
+  {
+    "id": "B11",
+    "name": "B组11",
+    "region": "B",
+    "seed": 11
+  },
+  {
+    "id": "C01",
+    "name": "C组01",
+    "region": "C",
+    "seed": 1
+  },
+  {
+    "id": "C02",
+    "name": "C组02",
+    "region": "C",
+    "seed": 2
+  },
+  {
+    "id": "C03",
+    "name": "C组03",
+    "region": "C",
+    "seed": 3
+  },
+  {
+    "id": "C04",
+    "name": "C组04",
+    "region": "C",
+    "seed": 4
+  },
+  {
+    "id": "C05",
+    "name": "C组05",
+    "region": "C",
+    "seed": 5
+  },
+  {
+    "id": "C06",
+    "name": "C组06",
+    "region": "C",
+    "seed": 6
+  },
+  {
+    "id": "C07",
+    "name": "C组07",
+    "region": "C",
+    "seed": 7
+  },
+  {
+    "id": "C08",
+    "name": "C组08",
+    "region": "C",
+    "seed": 8
+  },
+  {
+    "id": "C09",
+    "name": "C组09",
+    "region": "C",
+    "seed": 9
+  },
+  {
+    "id": "C10",
+    "name": "C组10",
+    "region": "C",
+    "seed": 10
+  },
+  {
+    "id": "C11",
+    "name": "C组11",
+    "region": "C",
+    "seed": 11
+  },
+  {
+    "id": "D01",
+    "name": "D组01",
+    "region": "D",
+    "seed": 1
+  },
+  {
+    "id": "D02",
+    "name": "D组02",
+    "region": "D",
+    "seed": 2
+  },
+  {
+    "id": "D03",
+    "name": "D组03",
+    "region": "D",
+    "seed": 3
+  },
+  {
+    "id": "D04",
+    "name": "D组04",
+    "region": "D",
+    "seed": 4
+  },
+  {
+    "id": "D05",
+    "name": "D组05",
+    "region": "D",
+    "seed": 5
+  },
+  {
+    "id": "D06",
+    "name": "D组06",
+    "region": "D",
+    "seed": 6
+  },
+  {
+    "id": "D07",
+    "name": "D组07",
+    "region": "D",
+    "seed": 7
+  },
+  {
+    "id": "D08",
+    "name": "D组08",
+    "region": "D",
+    "seed": 8
+  },
+  {
+    "id": "D09",
+    "name": "D组09",
+    "region": "D",
+    "seed": 9
+  },
+  {
+    "id": "D10",
+    "name": "D组10",
+    "region": "D",
+    "seed": 10
+  }
+]

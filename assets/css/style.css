@@ -1,0 +1,190 @@
+/* ===== Base Reset ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f5f7fb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* ===== Layout ===== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 20px;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  margin-right: 18px;
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.navbar a:hover {
+  color: #111827;
+}
+
+/* ===== Headings ===== */
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* ===== Card ===== */
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin-bottom: 24px;
+
+  /* subtle depth */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* ===== Table ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px 14px;
+  text-align: left;
+}
+
+th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+  color: #374151;
+  font-size: 14px;
+}
+
+td {
+  font-size: 14px;
+}
+
+tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+tr:hover {
+  background-color: #f9fafb;
+}
+
+/* zebra stripe */
+tbody tr:nth-child(even) {
+  background-color: #fcfcfd;
+}
+
+/* ===== Buttons ===== */
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.15s;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+/* subtle secondary button */
+button.ghost {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+button.ghost:hover {
+  background: #e5e7eb;
+}
+
+/* ===== Inputs ===== */
+input, select {
+  padding: 7px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  background: white;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* ===== Filters Row ===== */
+.filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* ===== Badge ===== */
+.badge {
+  display: inline-block;
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 999px;
+  background: #e5e7eb;
+  color: #374151;
+}
+
+/* ===== Small helper text ===== */
+.muted {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+/* ===== Footer ===== */
+.footer {
+  margin-top: 40px;
+  padding: 16px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+}
