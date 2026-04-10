@@ -1,5 +1,5 @@
-const TEAMS_URL = './data/teams.json';
-const MATCHES_URL = './data/matches.json';
+const TEAMS_URL = '../data/teams.json';
+const MATCHES_URL = '../data/matches.json';
 
 let currentMatches = [];
 let currentTeams = [];
