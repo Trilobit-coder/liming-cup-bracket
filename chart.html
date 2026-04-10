@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>决赛对阵图</title>
+
+    <!-- Bracketry 样式 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bracketry/dist/bracketry.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .bracket-container {
+            margin-top: 20px;
+            padding: 16px;
+            background: #fff;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
+            overflow-x: auto;
+        }
+
+        .schedule-table {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>决赛阶段</h1>
+
+        <div class="card">
+            <h2>对阵图</h2>
+            <div id="bracket" class="bracket-container"></div>
+        </div>
+
+        <div class="card">
+            <h2>比赛时间表</h2>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Match</th>
+                        <th>阶段</th>
+                        <th>时间</th>
+                    </tr>
+                </thead>
+                <tbody id="schedule-body"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Bracketry JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bracketry"></script>
+
+    <script src="assets/js/chart.js"></script>
+</body>
+
+</html>

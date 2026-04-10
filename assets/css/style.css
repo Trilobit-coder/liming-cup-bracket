@@ -188,3 +188,29 @@ input:focus, select:focus {
   color: #6b7280;
   font-size: 14px;
 }
+
+/* ==== Chart ==== */
+.bracket {
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.match {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.team {
+  font-weight: 500;
+}
+
+.vs {
+  color: #9ca3af;
+  font-size: 12px;
+}

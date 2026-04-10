@@ -3,168 +3,58 @@
 
 <head>
     <meta charset="utf-8">
-    <title>决赛对阵图</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f6f8fa;
-            padding: 20px;
-        }
-
-        h2 {
-            margin-bottom: 20px;
-        }
-
-        .bracket {
-            display: flex;
-            gap: 40px;
-            overflow-x: auto;
-        }
-
-        .round {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            min-width: 180px;
-            position: relative;
-        }
-
-        .round-title {
-            text-align: center;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .match {
-            position: relative;
-            background: white;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            padding: 10px;
-            text-align: center;
-            font-size: 13px;
-        }
-
-        /* 横线 */
-        .match::after {
-            content: "";
-            position: absolute;
-            right: -20px;
-            top: 50%;
-            width: 20px;
-            height: 2px;
-            background: #999;
-        }
-
-        /* 竖线 */
-        .round:not(:last-child) .match::before {
-            content: "";
-            position: absolute;
-            right: -20px;
-            top: 0;
-            width: 2px;
-            height: 100%;
-            background: #999;
-        }
-
-        .round:last-child .match::after {
-            display: none;
-        }
-
-        table {
-            margin-top: 40px;
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th,
-        td {
-            padding: 8px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        th {
-            background: #eee;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="黎明杯初赛">
+    <title>黎明杯初赛</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <meta name="Li Ming Cup" content="Competition Schedule" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
 </head>
 
 <body>
-
-    <h2>决赛对阵图</h2>
-
-    <div id="chart"></div>
-
-    <div id="schedule"></div>
-
-    <script>
-        const rounds = [
-            {
-                title: '第一轮',
-                matches: ['第1 vs 第8', '第2 vs 第7', '第3 vs 第6', '第4 vs 第5']
-            },
-            {
-                title: '第二轮',
-                matches: ['M1胜者 vs M2胜者', 'M3胜者 vs M4胜者']
-            },
-            {
-                title: '胜者组决赛',
-                matches: ['M5胜者 vs M6胜者']
-            },
-            {
-                title: '总决赛',
-                matches: ['胜者组冠军 vs 败者组冠军']
-            }
-        ];
-
-        const schedule = [
-            { id: 'M1', match: '第1 vs 第8', time: '09:00' },
-            { id: 'M2', match: '第2 vs 第7', time: '10:00' },
-            { id: 'M3', match: '第3 vs 第6', time: '11:00' },
-            { id: 'M4', match: '第4 vs 第5', time: '12:00' },
-            { id: 'M5', match: 'M1 vs M2', time: '14:00' },
-            { id: 'M6', match: 'M3 vs M4', time: '15:00' },
-            { id: 'M7', match: '决赛', time: '16:00' }
-        ];
-
-        function renderBracket() {
-            const root = document.getElementById('chart');
-
-            root.innerHTML = `
-    <div class="bracket">
-      ${ rounds.map(r => `
-        <div class="round">
-          <div class="round-title">${ r.title }</div>
-          ${ r.matches.map(m => `<div class="match">${ m }</div>`).join('') }
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <div class="brand__mark"></div>
+                <div>
+                    <h1>黎明杯初赛</h1>
+                </div>
+            </a>
+            <nav class="main-nav">
+                <a href="schedule.html">初赛赛程</a>
+                <a href="standing.html">积分榜</a>
+                <a href="admin.html">管理</a>
+            </nav>
         </div>
-      `).join('') }
-    </div>
-  `;
-        }
+    </header>
 
-        function renderSchedule() {
-            const root = document.getElementById('schedule');
-
-            root.innerHTML = `
-    <h3>时间表</h3>
-    <table>
-      <tr><th>场次</th><th>对阵</th><th>时间</th></tr>
-      ${ schedule.map(s => `
-        <tr>
-          <td>${ s.id }</td>
-          <td>${ s.match }</td>
-          <td>${ s.time }</td>
-        </tr>
-      `).join('') }
-    </table>
-  `;
-        }
-
-        renderBracket();
-        renderSchedule();
-    </script>
-
+    <main class="container">
+        <section class="hero">
+            <div class="hero-grid">
+                <div class="card hero-card">
+                    <h2>初赛阶段<br>小组积分赛展示页</h2>
+                    <div class="hero-actions">
+                        <a class="btn" href="schedule.html">查看赛程</a>
+                        <a class="btn secondary" href="standing.html">查看积分榜</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero">
+            <div class="hero-grid">
+                <div class="card hero-card">
+                    <h2>决赛阶段<br>决赛流程对阵展示</h2>
+                    <div class="hero-actions">
+                        <a class="btn" href="chart.html">查看对阵表</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
