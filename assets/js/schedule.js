@@ -1,5 +1,5 @@
-const TEAMS_URL = '/data/teams.json';
-const MATCHES_URL = '/data/matches.json';
+const TEAMS_URL = './data/teams.json';
+const MATCHES_URL = './data/matches.json';
 
 const root = document.querySelector('[data-schedule-root]');
 
@@ -117,11 +117,11 @@ async function initSchedulePage() {
                   <div class="team-line">
                     <strong>${escapeHtml(homeTeam?.name || match.homeTeamId || '主队未命名')}</strong>
                   </div>
-                          
+
                   <div class="match-card__score" style="white-space:nowrap;">
                     ${escapeHtml(getMatchScoreText(match))}
                   </div>
-                          
+
                   <div class="team-line team-line--away">
                     <strong>${escapeHtml(awayTeam?.name || match.awayTeamId || '客队未命名')}</strong>
                   </div>
