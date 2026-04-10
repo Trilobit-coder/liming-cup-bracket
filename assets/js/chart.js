@@ -1,5 +1,5 @@
-const TEAMS_URL = '../data/teams.json';
-const MATCHES_URL = '../data/matches.json';
+const TEAMS_URL = 'https://trilobit-coder.github.io/liming-cup-bracket/data/teams.json';
+const MATCHES_URL = 'https://trilobit-coder.github.io/liming-cup-bracket/data/matches.json';
 
 const root = document.querySelector('[data-chart-root]');
 
